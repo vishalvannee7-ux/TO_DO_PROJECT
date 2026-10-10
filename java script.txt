@@ -1,0 +1,18 @@
+button id="addBtn">Add Task</button>
+
+<u1 id="tasklist"></u1>
+<script>
+let input = document.getElementById("taskInput");
+let button = document.getElementById("addBtn");
+let list = document.getElementById("taskList");
+
+button.addEventListener("click", function() {
+  
+   let task = input.Value;
+
+   let li = document.createElement("li");
+
+   li.innerText = task;
+
+   list.appendeChild(li);
+});
